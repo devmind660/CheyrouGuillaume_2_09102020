@@ -1,32 +1,39 @@
 /* bleu #0065FC bleu clair #DEEBFF gris #F2F2F2 */
 
+/* Général */
+
 body{
 	font-family: 'Raleway', sans-serif;
 	font-size: 0.9em;
-	margin: 0;
-}
+	margin: 0;}
 a{
 	color: unset;
-	text-decoration: none;
-}
+	text-decoration: none;}
+
+/* Couleurs */
+
+	.bleu{
+		color: #0065FC;}
+	.gris{
+		color: rgb(217, 217, 217);}	
 
 /* Corps de page */
 
 section{
 	display: flex;
-	flex-wrap: wrap;
-}
+	flex-wrap: wrap;}
 article,aside{
 	border-radius: 15px;
-	padding: 15px; margin: 15px;
-}
-article div,aside div{
+	padding: 15px; margin: 15px;}
+.conteneur{
 	display: flex;
-	flex-wrap: wrap;
-}
-aside div{
-	flex-direction: column;
-}
+	flex-wrap: wrap;}
+article#hebergements{
+	flex: 3;
+	background-color: #F2F2F2;}
+aside{
+	flex: 1;
+	background-color: #F2F2F2;}
 
 /* Cartes */
 
@@ -38,54 +45,40 @@ article a,aside a{
 	border: 5px white solid;
 	border-radius: 15px;
 	box-shadow: silver 0 0 10px;
-	margin: 15px;
-}
+	margin: 15px;}
 article a{
 	background-size: 100%;
-	background-position-y: -50px;
+	background-position-y: 100%;
 	min-width: 225px; min-height: 175px;
-	max-width: 450px; max-height: 350px;
-}
+	max-width: 450px; max-height: 350px;}
 aside a{
 	background-size: 50%;
-	background-position-x: -15px;
+	background-position-y: 100%;
 	min-width: 300px; min-height: 125px;
-	max-width: 600px; max-height: 250px;
-}
+	max-width: 600px; max-height: 250px;}
 
 /* Bannières */
 
-a div{
+.ban_hebergement,.ban_populaire,.ban_activite{
 	background-color: white;
-	position: absolute;
-	display: block;
-}
-a div.horizontal{
+	position: absolute;}
+.ban_hebergement{
 	bottom: 0;
-	width: 100%; height: 40%;
-}
-a div.vertical{
+	width: 100%;}
+.ban_populaire{
 	right: 0;
-	height: 100%; width: 60%;
-}
+	width: 60%; height: 100%;
+	flex-direction: column;}	
+.ban_activite{
+	bottom: 0;
+	width: 100%; height: 25%;
+	display: flex;
+	align-items: center;}
 a h3,a p{
 	padding: 5px 10px 0 10px;
-	margin: 0;
-}
-
-/* Hébergements */
-
-article#hebergement{
-	flex: 3;
-	background-color: #F2F2F2;
-}
-
-/* Les plus populaire */
-
-aside{
-	flex: 1;
-	background-color: #F2F2F2;
-}
+	margin: 0;}
+.note{
+	padding: 5px 10px 5px 10px;}
 
 /* Pied de page */
 
@@ -94,10 +87,8 @@ footer{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding: 30px;
-}
+	padding: 30px;}
 footer div{
 	flex: 1;
 	min-width: 250px;
-	margin: 0px 15px 0 15px;
-}
+	margin: 0px 15px 0 15px;}
