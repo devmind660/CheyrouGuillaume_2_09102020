@@ -12,10 +12,59 @@ a{
 
 /* Couleurs */
 
-	.bleu{
-		color: #0065FC;}
-	.gris{
-		color: rgb(217, 217, 217);}	
+.bleu{
+	color: #0065FC;}
+.gris{
+	color: rgb(217, 217, 217);}	
+.moyen{
+	font-size: 20px;}
+.grand{
+	font-size: 25px;}
+
+/* En-tête */
+
+header{
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;}
+header img{
+	width: 100px; height: 45px;}
+nav ul{
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;}
+nav ul li{
+	border-top: 2px white solid;
+	padding: 15px; margin: 0;}
+nav ul li:hover{
+	color: #0065FC;
+	border-top: 2px #0065FC solid;}	
+
+/* Filtres */
+
+.petit_containeur{
+	display: flex;
+	align-items: center;}
+#accueil{
+	margin: 15px;)}
+#accueil .grand_containeur a{
+	border: 2px #F2F2F2 solid;
+	border-radius: 25px;
+	margin: 10px;}
+#accueil .grand_containeur a:hover{
+	border: 2px #0065FC solid;
+	background-color: #0065FC;
+	color: white;}
+#accueil .petit_containeur p{
+	padding: 10px;}
+.icone_filtre{
+	background-color: #F2F2F2;
+	border-radius: 25px;
+	width: 40px; height: 40px;
+	display: flex;
+	align-items: center; justify-content: center;}
+#icone_info{
+	border: 2px #F2F2F2 solid; border-radius: 15px; width: 25px; height: 25px; display: flex; align-items: center; justify-content: center; margin-right: 10px;}
 
 /* Corps de page */
 
@@ -24,16 +73,22 @@ section{
 	flex-wrap: wrap;}
 article,aside{
 	border-radius: 15px;
-	padding: 15px; margin: 15px;}
-.conteneur{
+	padding: 15px; margin: 20px;}
+.grand_containeur{
 	display: flex;
-	flex-wrap: wrap;}
-article#hebergements{
+	flex-wrap: wrap;
+	align-items: center;}
+#hebergements{
 	flex: 3;
 	background-color: #F2F2F2;}
 aside{
 	flex: 1;
 	background-color: #F2F2F2;}
+#logo_tendance{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
 /* Cartes */
 
