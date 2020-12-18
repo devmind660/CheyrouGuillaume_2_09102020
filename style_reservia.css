@@ -257,6 +257,10 @@ article{
 /* Activités */
 
 
+#div_activites a img{
+	object-fit: cover;
+}
+
 /* Voir dans les media queries */
 
 
@@ -381,6 +385,9 @@ footer div{
 	#div_activites a{
 		min-width: 200px;
 	}
+	#div_activites a img{
+		height: 200px;
+	}
 }
 
 
@@ -388,23 +395,16 @@ footer div{
 
 
 /* Flexbox */
-
 @media all and (max-width: 1023px){
 	#div_activites a{
-		flex: 1;
 		display: flex;
 		flex-direction: column;
 		margin: auto;
 		max-width: 400px;
 	}
-	#div_activites a img{
-		height: 200px;
-		object-fit: cover;
-	}
 }
 
 /* CSS Grid */
-
 @media all and (min-width: 1024px){
 	#div_activites{
 		display: grid;
@@ -419,35 +419,34 @@ footer div{
 	}
 	#div_activites a img{
 		height: 100%;
-		object-fit: cover;
 	}
 	#div_activites a h3{
 		position: absolute;
 		bottom: 0px;
 		width: 100%;
 	}
-	.activite_1{
+	#activite_1{
 		grid-column: 1;
 		grid-row: 1 / 11;
 	}
-	.activite_2{
+	#activite_2{
 		grid-column: 2;
 		grid-row: 1 / 7;
 	}
-	.activite_3{
+	#activite_3{
 		grid-column: 2;
 		grid-row: 7 / 11;
 	}
-	.activite_4{
+	#activite_4{
 		grid-column: 3;
 		grid-row: 1 / 11;
 	}
-	.activite_5{
+	#activite_5{
 		grid-column: 4;
 		grid-row: 1 / 6;
 	}
-	.activite_6{
+	#activite_6{
 		grid-column: 4;
 		grid-row: 6 / 11;
 	}
-}	
+}
